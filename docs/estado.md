@@ -1,10 +1,27 @@
 # 2. ESTADO DA ARTE
-O estado da arte é um mapeamento de toda a produção acadêmica sobre um assunto específico, aqui especificamente sobre o tema escolhido para o seu trabalho. A ideia consiste em reunir as conclusões que outras pesquisas científicas chegaram sobre um determinado assunto. Neste momento você deverá buscar respostas para as seguintes perguntas:
 
-1.	Quais pesquisas estão sendo desenvolvidas sobre esse tema?
-2.	Quem está pesquisando e onde?
-3.	O que as atuais pesquisas científicas concluíram sobre o tema? 
-4.	Quais as divergências dos pesquisadores sobre o assunto? 
-5.	Quais aspectos carecem de maior abordagem?
+1. Atualmente temos diversos softwares de controle de carros voltados para a locação de veículos, podemos destacar 7 deles sendo:  
 
-É importante referenciar estas pesquisas, fazendo as devidas citações de acordo com as normas da ABNT e colocando as referências completas ao final do trabalho.
+  • HQ Rental Software 
+  • Rently 
+  • LOC1 
+  • Rentsyst 
+  • Navotar 
+  • Renthub 
+  • Sisloc 
+  
+2. Cada software é desenvolvido por uma empresa diferente e em país diferentes, 
+nos quais podemos citar:  
+  • HQ Rental SW – CAAG sw – Curaçao 
+  • Rently – Rently sw LTDA – Argentina 
+  • LOC1 – LOC1 – Brasil 
+  • RentSysst – RentSystSoftware – Chipre 
+  • Navotar – Navotar Inc. – Canadá/EUA 
+  • Renthub – Renthub S.rl – Itália 
+  • Sisloc – Sisloc Softwares Ltda – Brasil 
+  
+3,4 e 5. Não há necessariamente uma conclusão assertiva e específica sobre o 
+tema, diferentes empresas têm diferentes modos de operação, o que culmina em di
+ferentes softwares que abordam áreas distintas do processo de locação de veículos. 
+É importante ressaltar, também, que mesmo aqueles sistemas com funcionalidades 
+parecidas, apresentam distinções em fluxos, recursos e métodos.

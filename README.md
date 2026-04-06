@@ -10,16 +10,15 @@ Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo de
 
 ## Integrantes
 
-* Vítor Camargo Pinho Moura
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
-* Nome completo do aluno 5
-* Nome completo do aluno 6
+* Vítor Moura
+* Ygor Durães
+* Igor Tessaro
+* Eduardo Roxo
+* Daniel de Mello
 
 ## Orientador
 
-* Nome completo do professor 
+* Luiz Alberto Ferreira Gomes
 
 # Planejamento
 

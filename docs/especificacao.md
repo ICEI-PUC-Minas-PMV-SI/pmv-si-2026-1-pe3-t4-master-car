@@ -177,9 +177,8 @@ Pós-condição: Usuário autenticado
 A Figura 2 mostra o diagrama de classes do sistema. A Matrícula deve conter a identificação do funcionário responsável pelo registro, bem com os dados do aluno e turmas. Para uma disciplina podemos ter diversas turmas, mas apenas um professor responsável por ela.
 
 #### Figura 2: Diagrama de Classes do Sistema.
- 
-![image](https://github.com/user-attachments/assets/abc7591a-b46f-4ea2-b8f0-c116b60eb24e)
 
+![Diagrama-Classes](https://github.com/user-attachments/assets/022f6ada-c6de-4560-ac85-79faccfcceec)
 
 ### 3.4.4 Descrições das Classes 
 

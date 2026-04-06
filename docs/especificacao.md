@@ -1,29 +1,29 @@
 # 3. DOCUMENTO DE ESPECIFICAÇÃO DE REQUISITOS DE SOFTWARE
 
-Nesta parte do trabalho você deve detalhar a documentação dos requisitos do sistema proposto de acordo com as seções a seguir. Ressalta-se que aqui é utilizado como exemplo um sistema de gestão de cursos de aperfeiçoamento.
-
 ## 3.1 Objetivos deste documento
-Descrever e especificar as necessidades da Coordenação do Curso de Sistemas de Informação da PUC Minas que devem ser atendidas pelo projeto SCCA – Sistema de Cadastro de Cursos de Aperfeiçoamento.
+Descrever e especificar as necessidades das locadoras pequenas e/ou médias de veículos que devem ser atendidas pelo projeto MasterCar, um sistema de gestão de locadoras de veículos, o qual contempla o ciclo completo da locação, gerenciamento de veículos, reservas, funcionários e controle de acesso ao sistema.
 
 ## 3.2 Escopo do produto
 
 ### 3.2.1 Nome do produto e seus componentes principais
-O produto será denominado SCCA – Sistema de Cadastro de Cursos de Aperfeiçoamento. Ele terá somente um componente (módulo) com os devidos elementos necessários à gestão de cursos.
+O produto possui o nome MasterCar. Ele terá um único componente (módulo) principal com os elementos necessários à gestão completa de uma locadora pequena e/ou média de veículos, incluindo controle de acesso, gerenciamento de veículos, reservas e dashboard gerencial.
 
 ### 3.2.2 Missão do produto
 Gerenciar informações sobre a oferta de cursos de aperfeiçoamento, gerenciar a composição das turmas, alunos, professores e matrículas. 
 
 ### 3.2.3 Limites do produto
-O SCCA não fornece nenhuma forma de avaliação de alunos, pagamento de parcelas do curso, pagamento a professore e agendamentos. O SCCA não contempla o atendimento a vários cursos de Sistemas de Informação de outras unidades da PUC Minas.
+O MasterCar não contempla funcionalidades voltadas para locadoras de grande porte ou redes regionais com múltiplas filiais. O sistema também não realiza avaliações de condutores ou scoring de crédito de clientes.
 
 ### 3.2.4 Benefícios do produto
 
-| # | Benefício | Valor para o Cliente |
+| # | Benefício | Valor para a Locadora |
 |--------------------|------------------------------------|----------------------------------------|
-|1	| Facilidade no cadastro de dados |	Essencial |
-|2 | Facilidade na recuperação de informações | Essencial | 
-|3 | Segurança no cadastro de matrículas | Essencial | 
-|4	| Melhoria na comunicação com os alunos	| Recomendável | 
+|1	| Interface moderna e intuitiva para operadores sem formação técnica |	Essencial |
+|2 | Facilidade no cadastro e consulta de veículos e reservas | Essencial | 
+|3 | Controle de acesso com diferentes níveis de permissão | Essencial | 
+|4	| Dashboard com indicadores gerenciais em tempo real	| Recomendável |
+|5	| Prevenção de duplicidade de dados e reservas conflitantes	| Essencial |
+|6	| Segurança no acesso com autenticação por senha	| Essencial | 
 
 ## 3.3 Descrição geral do produto
 
@@ -31,85 +31,146 @@ O SCCA não fornece nenhuma forma de avaliação de alunos, pagamento de parcela
 
 | Código | Requisito Funcional (Funcionalidade) | Descrição |
 |--------------------|------------------------------------|----------------------------------------|
-| RF1 | Gerenciar Curso de Aperfeiçoamento |	Processamento de Inclusão, Alteração, Exclusão e Consulta de Cursos de Aperfeiçoamento |
-| RF2 |	Gerenciar Professor	| Processamento de Inclusão, Alteração, Exclusão e Consulta de professores |
-| RF3	| Gerenciar Matrícula |	Processamento de Inclusão, Alteração, Exclusão e Consulta de Matrículas de alunos em Cursos de Aperfeiçoamento |
-| ... |	...	| ... |
+| RF1 | Gerenciar Acesso ao Sistema |	O administrador pode cadastrar, editar, excluir e consultar funcionários, além de definir níveis de acesso (administrador ou funcionário). |
+| RF2 |	Autenticar Usuário	| O sistema deve permitir login seguro com validação de credenciais, concedendo acesso conforme o nível do usuário cadastrado. |
+| RF3	| Gerenciar Veículos |	Processamento de Inclusão, Alteração, Exclusão e Consulta de veículos da frota, incluindo dados como modelo, placa, disponibilidade e características. |
+| RF4	| Registrar Reservas |	O sistema deve registrar reservas, informando dados do cliente, veículo reservado e datas definidas. |
+| RF5	| Consultar Dashboard |	O sistema apresenta indicadores gerenciais como total de reservas, veículos disponíveis, veículos reservados e histórico de movimentações. |
+| RF6	| Validação de Dados Únicos |	O sistema atualiza automaticamente a disponibilidade de veículos conforme reservas são criadas, alteradas ou canceladas, prevenindo duplicidade de dados. |
 
 ### 3.3.2 Requisitos Não Funcionais
 
 | Código | Requisito Não Funcional (Restrição) |
 |--------------------|------------------------------------|
-| RNF1 | O ambiente operacional a ser utilizado é o Windows XP. |
-| RNF2 | O sistema deverá executar em um computador configurado com uma impressora de tecnologia laser ou de jato de tinta, a ser usada para impressão dos relatórios. |
-| RNF3 |	Segurança	O produto deve restringir o acesso por meio de senhas individuais para o usuário. |
-| ... |	... |	... |
+| RNF1 | O sistema deve ser uma aplicação web compatível com navegadores modernos (Chromium) |
+| RNF2 | O sistema deve utilizar banco de dados relacional (SQL) para garantir integridade e consistência dos dados. |
+| RNF3 |	O sistema deve garantir segurança de acesso por meio de autenticação com login e senha, com senhas de no mínimo 8 caracteres contendo ao menos um número. |
+| RNF4 |	A interface deve ser simples, intuitiva e responsiva, adequada para usuários sem formação técnica em TI. |
 
 ### 3.3.3 Usuários 
 
 | Ator | Descrição |
 |--------------------|------------------------------------|
-| Coordenador |	Usuário gerente do sistema responsável pelo cadastro e manutenção de cursos de aperfeiçoamento. Possui acesso geral ao sistema. |
-| Secretaria |	Usuário responsável por registros de alunos, professores, turmas e gerência de matrículas. |
-| ... |	... |	... |
+| Administrador |	Usuário gerente do sistema responsável pelo cadastro e manutenção de funcionários e pelo controle geral da locadora. Possui acesso completo a todas as funcionalidades do sistema, incluindo o dashboard gerencial. |
+| Funcionário |	Usuário operacional responsável pelo registro de reservas, atualização de disponibilidade de veículos e atendimento aos clientes. Possui acesso às funcionalidades operacionais do sistema. |
 
 ## 3.4 Modelagem do Sistema
 
 ### 3.4.1 Diagrama de Casos de Uso
-Como observado no diagrama de casos de uso da Figura 1, a secretária poderá gerenciar as matrículas e professores no sistema, enquanto o coordenador, além dessas funções, poderá gerenciar os cursos de aperfeiçoamento.
+Como observado no diagrama de casos de uso da Figura 1, o Funcionário poderá realizar reservas de veículos, manter a disponibilidade de veículos e consultar o dashboard do sistema. O Administrador, além dessas funções, poderá gerenciar o acesso ao sistema, cadastrando e configurando os funcionários.
 
 #### Figura 1: Diagrama de Casos de Uso do Sistema.
 
-![dcu](https://github.com/user-attachments/assets/41f6b731-b44e-43aa-911f-423ad6198f47)
+![Diagrama-CSU](https://github.com/user-attachments/assets/a96fb660-94f7-4626-9dce-dc0ef7c7d1ce)
  
 ### 3.4.2 Descrições de Casos de Uso
 
 Cada caso de uso deve ter a sua descrição representada nesta seção. Exemplo:
 
-#### Gerenciar Professor (CSU01)
+#### Gerenciar Acesso ao Sistema (CSU01)
 
-Sumário: A Secretária realiza a gestão (inclusão, remoção, alteração e consulta) dos dados sobre professores.
+Sumário: Permite ao administrador cadastrar funcionários e definir níveis de acesso.
 
-Ator Primário: Secretária.
+Ator Primário: Administrador.
 
-Ator Secundário: Coordenador.
-
-Pré-condições: A Secretária deve ser validada pelo Sistema.
+Pré-condições: Administrador autenticado.
 
 Fluxo Principal:
 
-1) 	A Secretária requisita manutenção de professores.
-2) 	O Sistema apresenta as operações que podem ser realizadas: inclusão de um novo professor, alteração de um professor, a exclusão de um professor e a consulta de dados de um professor.
-3) 	A Secretária seleciona a operação desejada: Inclusão, Exclusão, Alteração ou Consulta, ou opta por finalizar o caso de uso.
-4) 	Se a Secretária desejar continuar com a gestão de professores, o caso de uso retorna ao passo 2; caso contrário o caso de uso termina.
+1.	O administrador acessa o sistema 
+2.	Solicita o cadastro de um novo funcionário 
+3.	Informa os dados do funcionário 
+4.	Define o nível de acesso 
+5.	O sistema confirma o cadastro 
 
-Fluxo Alternativo (3): Inclusão
+Fluxo Alternativo:
+- Dados inválidos → o sistema solicita correção
 
-a)	A Secretária requisita a inclusão de um professor. <br>
-b)	O Sistema apresenta uma janela solicitando o CPF do professor a ser cadastrado. <br>
-c)	A Secretária fornece o dado solicitado. <br>
-d)	O Sistema verifica se o professor já está cadastrado. Se sim, o Sistema reporta o fato e volta ao início; caso contrário, apresenta um formulário em branco para que os detalhes do professor (Código, Nome, Endereço, CEP, Estado, Cidade, Bairro, Telefone, Identidade, Sexo, Fax, CPF, Data do Cadastro e Observação) sejam incluídos. <br>
-e)	A Secretária fornece os detalhes do novo professor. <br>
-f)	O Sistema verifica a validade dos dados. Se os dados forem válidos, inclui o novo professor e a grade listando os professores cadastrados é atualizada; caso contrário, o Sistema reporta o fato, solicita novos dados e repete a verificação. <br>
+Pós-condição: Funcionário cadastrado
 
-Fluxo Alternativo (3): Remoção
+#### Realizar Reserva de Veículo (CSU02)
 
-a)	A Secretária seleciona um professor e requisita ao Sistema que o remova. <br>
-b)	Se o professor pode ser removido, o Sistema realiza a remoção; caso contrário, o Sistema reporta o fato. <br>
+Sumário: Permite ao funcionário registrar uma reserva para um cliente.
 
-Fluxo Alternativo (3): Alteração
+Ator Primário: Funcionário.
 
-a)	A Secretária altera um ou mais dos detalhes do professor e requisita sua atualização. <br>
-b)	O Sistema verifica a validade dos dados e, se eles forem válidos, altera os dados na lista de professores, caso contrário, o erro é reportado. <br>
- 
-Fluxo Alternativo (3): Consulta
+Ator Secundário: Cliente.
 
-a)	A Secretária opta por pesquisar pelo nome ou código e solicita a consulta sobre a lista de professores. <br>
-b)	O Sistema apresenta uma lista professores. <br>
-c)	A Secretária seleciona o professor. <br>
-d)	O Sistema apresenta os detalhes do professor no formulário de professores. <br>
+Pré-condições: Funcionário autenticado.
 
-Pós-condições: Um professor foi inserido ou removido, seus dados foram alterados ou apresentados na tela.
+Fluxo Principal:
+
+1.	O funcionário acessa o sistema
+2.	Solicita a criação de reserva
+3.	Informa os dados do cliente
+4.	Seleciona um veículo disponível
+5.	Define a data da reserva
+6.	O sistema apresenta os dados
+7.	O funcionário confirma
+8.	O sistema confirma a reserva
+
+Fluxos Alternativos:
+
+- Veículo indisponível → selecionar outro
+- Cliente não cadastrado → realizar cadastro
+
+Pós-condição: Reserva registrada
+
+#### Consultar Dashboard (CSU03)
+
+Sumário: Permite ao usuário visualizar indicadores do sistema.
+
+Ator Primário: Usuário.
+
+Pré-condições: Usuário autenticado.
+
+Fluxo Principal:
+
+1.	O usuário acessa o sistema
+2.	O sistema exibe o dashboard
+3.	O usuário analisa os dados
+
+Pós-condição: Informações visualizadas
+
+#### Manter Disponibilidade de Veículos (CSU04)
+
+Sumário: Permite atualizar dados de veículos para garantir reservas corretas.
+
+Ator Primário: Funcionário.
+
+Pré-condições: Funcionário autenticado.
+
+Fluxo Principal:
+
+1.	O funcionário acessa o sistema
+2.	Visualiza a lista de veículos
+3.	Atualiza informações necessárias
+4.	O sistema confirma a atualização
+
+Fluxo Alternativo:
+- Dados duplicados → sistema bloqueia
+
+Pós-condição: Dados atualizados
+
+#### Autenticar Usuário (CSU05)
+
+Sumário: Permite acesso seguro ao sistema.
+
+Ator Primário: Usuário.
+
+Pré-condições: Usuário cadastrado.
+
+Fluxo Principal:
+
+1.	O usuário acessa a tela de login
+2.	Informa login e senha
+3.	O sistema valida
+4.	O sistema concede acesso
+
+Fluxo Alternativo:
+- Dados incorretos → sistema informa erro
+
+Pós-condição: Usuário autenticado
 
 ### 3.4.3 Diagrama de Classes 
 
@@ -124,9 +185,9 @@ A Figura 2 mostra o diagrama de classes do sistema. A Matrícula deve conter a i
 
 | # | Nome | Descrição |
 |--------------------|------------------------------------|----------------------------------------|
-| 1	|	Aluno |	Cadastro de informações relativas aos alunos. |
-| 2	| Curso |	Cadastro geral de cursos de aperfeiçoamento. |
-| 3 |	Matrícula |	Cadastro de Matrículas de alunos nos cursos. |
-| 4 |	Turma |	Cadastro de turmas.
-| 5	|	Professor |	Cadastro geral de professores que ministram as disciplinas. |
-| ... |	... |	... |
+| 1	|	Usuario |	Classe base que representa qualquer usuário do sistema MasterCar, contendo atributos comuns de autenticação e identificação. |
+| 2	| Administrador |	Especialização de Usuário com acesso completo ao sistema. Responsável pelo cadastro e gestão de funcionários e configurações gerais. |
+| 3 |	Funcionário | Especialização de Usuário com acesso operacional. Responsável pelo registro de reservas e atualização de disponibilidade de veículos. |
+| 4 |	Veículo |	Cadastro de veículos da frota da locadora, incluindo dados como modelo, placa, ano, categoria e status atual de disponibilidade. |
+| 5	|	Reserva |	Registro de locação de um veículo por um cliente, contendo período, status e referências ao funcionário responsável, ao cliente e ao veículo reservado. |
+| 6	|	Cliente |	Cadastro de informações dos clientes da locadora, como nome, CPF, telefone, e-mail e endereço, vinculado às reservas. |

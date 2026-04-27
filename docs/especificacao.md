@@ -9,7 +9,7 @@ Descrever e especificar as necessidades das locadoras pequenas e/ou médias de v
 O produto possui o nome MasterCar. Ele terá um único componente (módulo) principal com os elementos necessários à gestão completa de uma locadora pequena e/ou média de veículos, incluindo controle de acesso, gerenciamento de veículos, reservas e dashboard gerencial.
 
 ### 3.2.2 Missão do produto
-Gerenciar informações sobre a oferta de cursos de aperfeiçoamento, gerenciar a composição das turmas, alunos, professores e matrículas. 
+Gerenciar informações sobre veículos, reservas, funcionários e clientes de locadoras de veículos de pequeno e médio porte, com uma interface moderna, simples e intuitiva atendendo o ciclo completo da locação de veículos.
 
 ### 3.2.3 Limites do produto
 O MasterCar não contempla funcionalidades voltadas para locadoras de grande porte ou redes regionais com múltiplas filiais. O sistema também não realiza avaliações de condutores ou scoring de crédito de clientes.

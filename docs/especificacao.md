@@ -61,7 +61,8 @@ Como observado no diagrama de casos de uso da Figura 1, o Funcionário poderá r
 
 #### Figura 1: Diagrama de Casos de Uso do Sistema.
 
-![Diagrama-CSU](https://github.com/user-attachments/assets/a96fb660-94f7-4626-9dce-dc0ef7c7d1ce)
+<img width="1286" height="816" alt="Diagrama-CSU" src="https://github.com/user-attachments/assets/5b541f16-27e0-4ad6-8d43-59957d3cfbbe" />
+
  
 ### 3.4.2 Descrições de Casos de Uso
 
@@ -178,7 +179,7 @@ A Figura 2 mostra o diagrama de classes do sistema. A Matrícula deve conter a i
 
 #### Figura 2: Diagrama de Classes do Sistema.
 
-![Diagrama-Classes](https://github.com/user-attachments/assets/022f6ada-c6de-4560-ac85-79faccfcceec)
+<img width="1371" height="816" alt="Diagrama-Classes" src="https://github.com/user-attachments/assets/39c79328-a014-4b0b-978e-13608e407e7c" />
 
 ### 3.4.4 Descrições das Classes 
 
@@ -190,3 +191,4 @@ A Figura 2 mostra o diagrama de classes do sistema. A Matrícula deve conter a i
 | 4 |	Veículo |	Cadastro de veículos da frota da locadora, incluindo dados como modelo, placa, ano, categoria e status atual de disponibilidade. |
 | 5	|	Reserva |	Registro de locação de um veículo por um cliente, contendo período, status e referências ao funcionário responsável, ao cliente e ao veículo reservado. |
 | 6	|	Cliente |	Cadastro de informações dos clientes da locadora, como nome, CPF, telefone, e-mail e endereço, vinculado às reservas. |
+| 7	|	Pagamento | Representa pagamento vinculado a uma reserva, contendo informações como valor total, data, forma de pagamento e status da transação (pendente, aprovado ou cancelado). |

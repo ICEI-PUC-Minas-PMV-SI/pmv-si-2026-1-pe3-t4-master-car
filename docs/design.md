@@ -12,8 +12,7 @@ Quarta Persona - Pedro Melo [Persona Pedro Melo.pdf](https://github.com/user-att
 
 Quinta Persona - Camila Rocha [Persona.Camila.Rocha.pdf](https://github.com/user-attachments/files/27572404/Persona.Camila.Rocha.pdf)
 
- ----------------------------------------------------------------- // -------------------------------------------------------------------------- // -------------------------------------------------------------------
-
+ ----------------------------------------------------------------- // -------------------------------------------------------------------------- // ------------
 ## 4.2 Mapa de Empatia
 
 Mapa da Empatia João Alves - <img width="1920" height="1080" alt="Mapa da empatia João Alves" src="https://github.com/user-attachments/assets/20f52daf-5ef7-4d73-8175-3ac73b1420b4" /> 
@@ -24,7 +23,7 @@ Mapa da Empatia Kaio Pereira -  <img width="1920" height="1080" alt="Mapa da Emp
 
 Mapa da Empatia Camila Rocha - <img width="1672" height="941" alt="camila rocha" src="https://github.com/user-attachments/assets/28aaaf9a-4bd2-4d0c-a718-17d1216511bd" />
 
- ----------------------------------------------------------------- // -------------------------------------------------------------------------- // -------------------------------------------------------------------
+ ----------------------------------------------------------------- // -------------------------------------------------------------------------- // --------------------
 
 ## 4.3 Protótipos das Interfaces
 Tela de Login 
@@ -109,11 +108,13 @@ Princípios Gestálticos
 •	Pregnância (Simplicidade): A interface utiliza formas geométricas simples e uma organização limpa, permitindo que o usuário compreenda a situação geral da frota em poucos segundos.
 
 Regras de Ouro
+
 •	Consistência: A tela utiliza a mesma identidade visual, ícones e padrões de cores estabelecidos nas telas de Login, Dashboard e Reservas, mantendo a unidade do sistema.
 •	Feedback Informativo: A seção inferior "Como funciona o status?" fornece uma explicação textual clara sobre as regras de negócio que alteram as cores dos estados dos veículos, educando o usuário.
 •	Controle ao Usuário: A presença de botões explícitos como "+ NOVO VEÍCULO" e ferramentas de filtragem por status e busca por placa garantem que o usuário tenha total controle sobre a gestão do inventário.
 
 Recomendações Ergonômicas
+
 •	Agrupamento e distinção entre itens: A separação entre o resumo da frota (topo), ferramentas de busca (meio) e a listagem detalhada (base) organiza a hierarquia de importância da informação.
 •	Controle explícito: Os botões de ação na coluna da direita utilizam rótulos claros e ícones padronizados (engrenagem para manutenção, lixeira para excluir), reduzindo o risco de ações acidentais.
 •	Legibilidade: O contraste entre o texto branco/cinza e o fundo escuro, aliado ao uso estratégico de cores para status, garante uma leitura rápida e sem esforço visual.
@@ -146,21 +147,24 @@ Tela de Clientes
 <img width="1873" height="715" alt="capture_260510_163945" src="https://github.com/user-attachments/assets/7bc5458c-2370-4988-8c25-17f7c4d6c59c" /> 
 
 Princípios Gestálticos
+
 •	Proximidade: O nome do cliente e o seu respectivo e-mail estão agrupados verticalmente, indicando que são informações pertencentes ao mesmo indivíduo.
 •	Semelhança: Os botões de ação ("Editar" e "Excluir") e os indicadores de status utilizam formatos e cores consistentes (verde para ativo, amarelo para inativo), permitindo que o usuário identifique rapidamente o estado de cada registro.
 •	Continuidade: A organização das colunas (Cliente, CPF, Telefone, Status e Ações) cria uma linha de leitura clara, permitindo que o olhar percorra os dados de um cliente de forma fluida.
 
 Regras de Ouro
+
 •	Controle ao Usuário: O botão "+ NOVO CLIENTE" no canto superior direito e as opções de filtro e busca dão ao usuário o poder de gerenciar a base de dados de forma proativa.
 •	Feedback Informativo: O uso de badges coloridos para o status fornece uma resposta visual instantânea sobre a situação cadastral do cliente.
 •	Minimizar Carga de Memória: O uso de avatares com iniciais (ex: "JS", "MS") ajuda no reconhecimento visual rápido, reduzindo a necessidade de leitura detalhada de todos os nomes.
 
 Recomendações Ergonômicas
+
 •	Agrupamento e distinção entre itens: A interface é dividida em blocos lógicos: métricas rápidas no topo, ferramentas de filtragem no meio e a listagem detalhada na base.
 •	Legibilidade: O contraste entre os textos claros e o fundo escuro (Modo Escuro) é otimizado para evitar a fadiga visual durante o uso prolongado.
 •	Minimização da carga de trabalho: A barra de busca permite localizar clientes por nome, e-mail ou CPF, acelerando o processo de atendimento.
 
- ----------------------------------------------------------------- // -------------------------------------------------------------------------- // -------------------------------------------------------------------
+ ----------------------------------------------------------------- // -------------------------------------------------------------------------- // --------------
 
 ## 4.4 Testes com Protótipos
 1. Ao acessar a página inicial, você conseguiu entender rapidamente qual é o propósito ou objetivo principal do site?

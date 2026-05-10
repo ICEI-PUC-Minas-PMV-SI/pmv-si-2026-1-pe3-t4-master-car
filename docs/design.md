@@ -110,10 +110,48 @@ Tela de usuários
 
 
 ## 4.4 Testes com Protótipos
-Nesta seção você deve apresentar os testes realizados com usuários utilizando os protótipos de alta fidelidade desenvolvidos na seção anterior. O objetivo é avaliar a usabilidade, a clareza das informações e a adequação do design às necessidades das personas definidas no projeto.
+1. Ao acessar a página inicial, você conseguiu entender rapidamente qual é o propósito ou objetivo principal do site?
+- Sim, o propósito fica claro que é sobre um gerenciamento de reservas e veículos.
 
-Cada integrante do grupo deverá aplicar o teste com um usuário distinto, preferencialmente alinhado ao perfil das personas criadas. Devem ser definidas previamente as tarefas que o usuário deverá executar no protótipo (por exemplo: realizar um cadastro, buscar um produto, concluir uma compra).
+4. O menu e os botões estavam posicionados de forma intuitiva?
+- Sim.
 
-Durante a aplicação do teste, registre observações sobre comportamentos, dúvidas, erros e comentários feitos pelo usuário, bem como o tempo necessário para a execução de cada tarefa. Ao final, colete o feedback do participante, destacando pontos positivos e aspectos a serem melhorados.
+5. A nomenclatura das seções (menus, botões, links) fez sentido para você?
+- Sim.
 
-Os resultados obtidos por todos os integrantes devem ser consolidados, apresentando uma análise geral com os principais problemas encontrados, oportunidades de melhoria e as ações previstas para o projeto final. 
+6. Você conseguiu encontrar facilmente as seções ou informações que procurava no protótipo?
+- Sim.
+
+7. As etapas apresentadas para realizar as tarefas estavam claras e seguiam uma lógica compreensível?
+- Sim.
+
+8. Os elementos visuais (cores, ícones e disposição dos botões) facilitaram a identificação do que era clicável e do que era apenas informativo?
+- Sim, botões estavam bem identificáveis.
+
+9. Há elementos visuais que chamam atenção indevidamente ou confundem?
+- Talvez as cores sejam muito escuras nas palavras, sem destaque. Na página “Reservas”, não há nada explicando a legenda e o que seriam reservas “pendente” e o porque estão assim. Por fim, na página “Clientes”, seria a mesma dificuldade em não saber exatamente o que é um cliente ativo/inativo.
+
+10. Os textos e rótulos utilizados nas páginas estavam claros e ajudaram a entender as ações que você podia realizar?
+- Sim.
+
+11. Houve algum elemento difícil de visualizar, clicar ou compreender durante a navegação (por tamanho, contraste ou formato)?
+- Sim, alguns textos no dashboard tem são um poucos escuros e fonte um pouco pequena, pode dificultar a leita.
+
+12. O texto das instruções, rótulos e mensagens é claro e compreensível?
+- Sim, mas melhoraria as cores dos textos.
+
+13. Encontrou termos técnicos ou expressões confusas?
+- Não.
+
+14. Você se sentiu confiante e satisfeito ao interagir com o protótipo, sem necessidade de ajuda externa?
+- Sim.
+
+15. O que você mais gostou na interface?
+- Fácil navegação, dashboard explicativo e com informações úteis.
+
+16. O que você mudaria ou melhoraria?
+- Talvez as cores, são um pouco escuras, adicionar um tema claro. Principalmente nos textos.
+
+17. Tem algo mais que gostaria de comentar sobre os protótipos?
+- Não, telas bem intuitivas e objetivas, o que teria mudança seriam os textos que estão mais escuros, podendo dificultar leitura para algumas pessoas.
+

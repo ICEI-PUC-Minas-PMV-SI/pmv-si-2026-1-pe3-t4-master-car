@@ -24,20 +24,24 @@ Mapa da Empatia Kaio Pereira -  <img width="1920" height="1080" alt="Mapa da Emp
 
 ## 4.3 Protótipos das Interfaces
 Tela de Login 
+
 <img width="1692" height="790" alt="image" src="https://github.com/user-attachments/assets/cebdf736-5965-423f-9bbc-a6f9abed5ff3" />
 
 Princípios Gestálticos
+
 •	Proximidade: Os campos de e-mail e senha estão agrupados verticalmente próximos ao botão "ENTRAR", indicando visualmente que pertencem à mesma funcionalidade de acesso.
 •	Semelhança: Os campos de input compartilham o mesmo estilo visual (bordas finas, fundo escuro e tipografia), reforçando que possuem a mesma função de entrada de dados.
 •	Continuidade: O alinhamento vertical dos elementos guia o olhar do usuário do topo (título "ACESSO") até a base (botão de ação), facilitando a leitura.
 •	Figura e Fundo: O formulário de login (figura) utiliza um leve contraste ou agrupamento centralizado para se destacar do fundo escuro da interface, criando uma separação clara.
 
 Regras de Ouro
+
 •	Consistência: A interface mantém um padrão visual sóbrio e minimalista, utilizando tipografia e ícones que seguem as convenções de telas de autenticação modernas.
 •	Atalhos: A inclusão da opção "Lembrar acesso" funciona como um atalho para facilitar o login em visitas futuras.
 •	Controle ao Usuário: A presença do link "Esqueci a senha" oferece ao usuário uma saída simples caso ele perca o controle sobre suas credenciais.
 
 Recomendações Ergonômicas
+
 •	Agrupamento e distinção entre itens: A organização centralizada do formulário separa claramente a área de entrada de dados da área de branding (logotipo à esquerda), tornando a ação esperada óbvia.
 •	Minimização da carga de trabalho: A interface é direta, com campos de preenchimento simples e uma opção de automação ("Lembrar acesso") que reduz o esforço futuro do usuário.
 •	Compatibilidade com o usuário: A linguagem utilizada ("E-MAIL", "SENHA", "ENTRAR") é simples e familiar ao modelo mental que o usuário possui para tarefas de login.

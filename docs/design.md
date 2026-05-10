@@ -10,6 +10,7 @@ Terceira Persona - Kaio Pereira [Persona Kaio Pereira.pdf](https://github.com/us
 
 Quarta Persona - Pedro Melo [Persona Pedro Melo.pdf](https://github.com/user-attachments/files/27418086/Persona.Pedro.Melo.pdf) 
 
+Quinta Persona - Camila Rocha [Persona.Camila.Rocha.pdf](https://github.com/user-attachments/files/27572404/Persona.Camila.Rocha.pdf)
 
 
 
@@ -22,6 +23,7 @@ Mapa da Empatia Mariana Souza - <img width="1920" height="1077" alt="Mapa da emp
 
 Mapa da Empatia Kaio Pereira -  <img width="1920" height="1080" alt="Mapa da Empatia Kaio Pereira " src="https://github.com/user-attachments/assets/340c3268-8525-4098-afd3-31ec9ec541c1" />
 
+Mapa da Empatia Camila Rocha - <img width="1672" height="941" alt="camila rocha" src="https://github.com/user-attachments/assets/28aaaf9a-4bd2-4d0c-a718-17d1216511bd" />
 
 
 ## 4.3 Protótipos das Interfaces

@@ -100,6 +100,27 @@ Recomendações Ergonômicas
 •	Legibilidade: O contraste entre o texto branco/cinza claro e o fundo escuro é mantido, garantindo que as placas dos veículos e datas de início/término sejam lidas com clareza.
 •	Compatibilidade com o usuário: O layout em formato de lista/tabela é o padrão esperado para gestão de registros, alinhando-se perfeitamente à forma como um administrador de locadora organiza seus processos.
 
+Tela de Veículos 
+
+<img width="1875" height="636" alt="capture_260510_161848" src="https://github.com/user-attachments/assets/276ee840-0a78-45b6-b2bd-e06495aa5bf2" />
+
+Princípios Gestálticos
+
+•	Proximidade: O nome do veículo e sua placa estão posicionados um logo abaixo do outro, sendo percebidos como uma unidade de informação única. Da mesma forma, os indicadores de resumo no topo ("DISPONÍVEIS", "LOCADOS", "MANUTENÇÃO") formam um grupo coeso de 
+•	Figura e Fundo: Os botões de ação ("Manutenção" e "Excluir") e os cards de métricas utilizam tons de cinza que se destacam sutilmente sobre o fundo preto, definindo claramente o que são elementos de interação.
+•	Pregnância (Simplicidade): A interface utiliza formas geométricas simples e uma organização limpa, permitindo que o usuário compreenda a situação geral da frota em poucos segundos.
+
+Regras de Ouro
+•	Consistência: A tela utiliza a mesma identidade visual, ícones e padrões de cores estabelecidos nas telas de Login, Dashboard e Reservas, mantendo a unidade do sistema.
+•	Feedback Informativo: A seção inferior "Como funciona o status?" fornece uma explicação textual clara sobre as regras de negócio que alteram as cores dos estados dos veículos, educando o usuário.
+•	Controle ao Usuário: A presença de botões explícitos como "+ NOVO VEÍCULO" e ferramentas de filtragem por status e busca por placa garantem que o usuário tenha total controle sobre a gestão do inventário.
+
+Recomendações Ergonômicas
+•	Agrupamento e distinção entre itens: A separação entre o resumo da frota (topo), ferramentas de busca (meio) e a listagem detalhada (base) organiza a hierarquia de importância da informação.
+•	Controle explícito: Os botões de ação na coluna da direita utilizam rótulos claros e ícones padronizados (engrenagem para manutenção, lixeira para excluir), reduzindo o risco de ações acidentais.
+•	Legibilidade: O contraste entre o texto branco/cinza e o fundo escuro, aliado ao uso estratégico de cores para status, garante uma leitura rápida e sem esforço visual.
+
+
 
 
 

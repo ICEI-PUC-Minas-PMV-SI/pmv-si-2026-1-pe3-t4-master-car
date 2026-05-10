@@ -18,6 +18,8 @@ Quarta Persona - Pedro Melo [Persona Pedro Melo.pdf](https://github.com/user-att
 
 Mapa da Empatia João Alves - <img width="1920" height="1080" alt="Mapa da empatia João Alves" src="https://github.com/user-attachments/assets/20f52daf-5ef7-4d73-8175-3ac73b1420b4" /> 
 
+Mapa da Empatia Mariana Souza - <img width="1920" height="1077" alt="Mapa da empatia Mariana Souza" src="https://github.com/user-attachments/assets/bd8ac421-eccc-4106-b6ee-e670fa2e0175" />
+
 Mapa da Empatia Kaio Pereira -  <img width="1920" height="1080" alt="Mapa da Empatia Kaio Pereira " src="https://github.com/user-attachments/assets/340c3268-8525-4098-afd3-31ec9ec541c1" />
 
 

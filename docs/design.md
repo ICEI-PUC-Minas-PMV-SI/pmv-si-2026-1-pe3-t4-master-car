@@ -12,8 +12,7 @@ Quarta Persona - Pedro Melo [Persona Pedro Melo.pdf](https://github.com/user-att
 
 Quinta Persona - Camila Rocha [Persona.Camila.Rocha.pdf](https://github.com/user-attachments/files/27572404/Persona.Camila.Rocha.pdf)
 
-
-
+ ----------------------------------------------------------------- // -------------------------------------------------------------------------- // -------------------------------------------------------------------
 
 ## 4.2 Mapa de Empatia
 
@@ -25,6 +24,7 @@ Mapa da Empatia Kaio Pereira -  <img width="1920" height="1080" alt="Mapa da Emp
 
 Mapa da Empatia Camila Rocha - <img width="1672" height="941" alt="camila rocha" src="https://github.com/user-attachments/assets/28aaaf9a-4bd2-4d0c-a718-17d1216511bd" />
 
+ ----------------------------------------------------------------- // -------------------------------------------------------------------------- // -------------------------------------------------------------------
 
 ## 4.3 Protótipos das Interfaces
 Tela de Login 
@@ -50,8 +50,6 @@ Recomendações Ergonômicas
 •	Minimização da carga de trabalho: A interface é direta, com campos de preenchimento simples e uma opção de automação ("Lembrar acesso") que reduz o esforço futuro do usuário.
 •	Compatibilidade com o usuário: A linguagem utilizada ("E-MAIL", "SENHA", "ENTRAR") é simples e familiar ao modelo mental que o usuário possui para tarefas de login.
 •	Legibilidade: O uso de cores contrastantes (branco sobre fundo cinza escuro/preto) garante que os textos e ícones sejam lidos sem dificuldade.
-
-
 
 Tela de Dashboard 
 
@@ -120,15 +118,49 @@ Recomendações Ergonômicas
 •	Controle explícito: Os botões de ação na coluna da direita utilizam rótulos claros e ícones padronizados (engrenagem para manutenção, lixeira para excluir), reduzindo o risco de ações acidentais.
 •	Legibilidade: O contraste entre o texto branco/cinza e o fundo escuro, aliado ao uso estratégico de cores para status, garante uma leitura rápida e sem esforço visual.
 
-
-
-
-
 Tela de usuários
+
 <img width="1869" height="915" alt="image" src="https://github.com/user-attachments/assets/1a4fce25-55c7-4db5-807a-8fdbc5f77731" />
 
+Princípios Gestálticos
 
+•	Proximidade: O nome do usuário e o seu respectivo e-mail estão posicionados muito próximos, indicando que pertencem à mesma identidade de conta.
+•	Semelhança: Os botões de ação ("Editar" e "Excluir") e os indicadores de perfil ("ADMINISTRADOR", "FUNCIONÁRIO") utilizam o mesmo estilo de pills (cápsulas), o que ajuda o cérebro a identificar rapidamente elementos que possuem categorias funcionais similares.
+•	Figura e Fundo: As linhas da tabela utilizam variações sutis de contraste em relação ao fundo preto total, permitindo separar visualmente onde termina um usuário e começa o próximo.
+•	Continuidade: A disposição das colunas (Usuário, Perfil, Status, Último Acesso e Ações) cria um alinhamento horizontal que facilita a leitura de ponta a ponta de cada registro.
 
+Regras de Ouro
+
+•	Consistência: A interface mantém o uso rigoroso da paleta de cores (amarelo para alertas/inativo e verde para ativo) e a mesma estrutura de botões ("+ NOVO USUÁRIO") vista nas outras telas do sistema.
+•	Controle ao Usuário: O sistema oferece ferramentas de busca e filtros por perfil ("Todos os perfis") no topo, permitindo que o administrador gerencie grandes listas com facilidade.
+
+Recomendações Ergonômicas
+
+•	Agrupamento e distinção entre itens: Há uma separação clara entre a área de comando (busca e filtros) e a área de visualização de dados (tabela), organizando o fluxo de trabalho.
+•	Legibilidade: O texto branco sobre o fundo escuro garante alto contraste, fundamental para a leitura rápida de nomes e horários.
+•	Controle explícito: Os ícones de edição e exclusão nas extremidades direitas são claros e diretos, seguindo as convenções de design de sistemas de gestão.
+•	Compatibilidade com o usuário: O uso de avatares com as iniciais do usuário (ex: "JA", "AS") facilita o reconhecimento visual rápido de quem é o operador sem depender exclusivamente da leitura do texto.
+
+Tela de Clientes 
+
+<img width="1873" height="715" alt="capture_260510_163945" src="https://github.com/user-attachments/assets/7bc5458c-2370-4988-8c25-17f7c4d6c59c" /> 
+
+Princípios Gestálticos
+•	Proximidade: O nome do cliente e o seu respectivo e-mail estão agrupados verticalmente, indicando que são informações pertencentes ao mesmo indivíduo.
+•	Semelhança: Os botões de ação ("Editar" e "Excluir") e os indicadores de status utilizam formatos e cores consistentes (verde para ativo, amarelo para inativo), permitindo que o usuário identifique rapidamente o estado de cada registro.
+•	Continuidade: A organização das colunas (Cliente, CPF, Telefone, Status e Ações) cria uma linha de leitura clara, permitindo que o olhar percorra os dados de um cliente de forma fluida.
+
+Regras de Ouro
+•	Controle ao Usuário: O botão "+ NOVO CLIENTE" no canto superior direito e as opções de filtro e busca dão ao usuário o poder de gerenciar a base de dados de forma proativa.
+•	Feedback Informativo: O uso de badges coloridos para o status fornece uma resposta visual instantânea sobre a situação cadastral do cliente.
+•	Minimizar Carga de Memória: O uso de avatares com iniciais (ex: "JS", "MS") ajuda no reconhecimento visual rápido, reduzindo a necessidade de leitura detalhada de todos os nomes.
+
+Recomendações Ergonômicas
+•	Agrupamento e distinção entre itens: A interface é dividida em blocos lógicos: métricas rápidas no topo, ferramentas de filtragem no meio e a listagem detalhada na base.
+•	Legibilidade: O contraste entre os textos claros e o fundo escuro (Modo Escuro) é otimizado para evitar a fadiga visual durante o uso prolongado.
+•	Minimização da carga de trabalho: A barra de busca permite localizar clientes por nome, e-mail ou CPF, acelerando o processo de atendimento.
+
+ ----------------------------------------------------------------- // -------------------------------------------------------------------------- // -------------------------------------------------------------------
 
 ## 4.4 Testes com Protótipos
 1. Ao acessar a página inicial, você conseguiu entender rapidamente qual é o propósito ou objetivo principal do site?

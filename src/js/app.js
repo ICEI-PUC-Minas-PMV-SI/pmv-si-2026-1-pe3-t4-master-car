@@ -475,3 +475,153 @@ function populateClienteSelect() {
     if (emailInput && opt.dataset.email) emailInput.value = opt.dataset.email;
   };
 }
+
+////////////////////////////////////////////////
+// USUÁRIOS
+////////////////////////////////////////////////
+
+function initUsers() {
+  if (!localStorage.getItem('mc_users')) {
+    localStorage.setItem('mc_users', JSON.stringify([
+      { id: 1, nome: 'João Alves',    email: 'joao.alves@mastercar.com', role: 'admin',    status: 'ativo',   acesso: 'Hoje, 09:15'  },
+      { id: 2, nome: 'Ana Souza',     email: 'ana@mastercar.com',        role: 'employee', status: 'ativo',   acesso: 'Hoje, 08:42'  },
+      { id: 3, nome: 'Pedro Martins', email: 'pedro@mastercar.com',      role: 'employee', status: 'inativo', acesso: '18 Abr, 14:30' }
+    ]));
+  }
+}
+
+function getUsers()   { return JSON.parse(localStorage.getItem('mc_users') || '[]'); }
+function saveUsers(u) { localStorage.setItem('mc_users', JSON.stringify(u)); }
+
+const ROLE_LABEL = { admin: 'Administrador', employee: 'Funcionário' };
+
+function renderUsersTable() {
+  const tbody = document.getElementById('usersTableBody');
+  if (!tbody) return;
+  const searchEl = document.getElementById('searchUsers');
+  const roleEl   = document.getElementById('filterRole');
+  const search   = (searchEl ? searchEl.value : '').toLowerCase();
+  const roleFilter = roleEl ? roleEl.value : '';
+
+  let users = getUsers();
+  if (search) users = users.filter(u =>
+    u.nome.toLowerCase().includes(search) || u.email.toLowerCase().includes(search)
+  );
+  if (roleFilter) users = users.filter(u => u.role === roleFilter);
+
+  if (!users.length) {
+    tbody.innerHTML = '<tr><td colspan="5" style="text-align:center;color:var(--gray-600);padding:24px;">Nenhum usuário encontrado</td></tr>';
+    return;
+  }
+  tbody.innerHTML = users.map(u => {
+    const initials   = u.nome.split(' ').map(n => n[0]).slice(0,2).join('').toUpperCase();
+    const roleClass  = u.role === 'admin' ? 'role-admin' : 'role-employee';
+    const roleLabel  = ROLE_LABEL[u.role] || u.role;
+    const badgeClass = u.status === 'ativo' ? 'badge-green' : 'badge-yellow';
+    const badgeLabel = u.status === 'ativo' ? 'Ativo' : 'Inativo';
+    return `<tr>
+      <td>
+        <div class="user-cell">
+          <div class="user-cell-avatar">${initials}</div>
+          <div>
+            <div class="user-cell-name">${u.nome}</div>
+            <div class="user-cell-email">${u.email}</div>
+          </div>
+        </div>
+      </td>
+      <td><span class="role-pill ${roleClass}" data-role="${u.role}">${roleLabel}</span></td>
+      <td><span class="badge ${badgeClass}">${badgeLabel}</span></td>
+      <td style="font-size:.8rem;color:var(--gray-500);">${u.acesso || '—'}</td>
+      <td>
+        <div class="actions-cell">
+          <button class="action-btn" title="Editar" onclick="openEditUser(${u.id})">
+            <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/></svg>
+          </button>
+          <button class="action-btn delete" title="Remover" onclick="removeUser(${u.id})">
+            <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"/></svg>
+          </button>
+        </div>
+      </td>
+    </tr>`;
+  }).join('');
+}
+
+function openNovoUsuario() {
+  const modal = document.getElementById('userModal');
+  delete modal.dataset.editId;
+  modal.querySelector('.modal-title').textContent = 'Novo Usuário';
+  modal.querySelector('.modal-subtitle').textContent = 'Preencha os dados para criar o acesso';
+  modal.querySelector('form').reset();
+  resetStrengthBars();
+  openModal('userModal');
+}
+
+function openEditUser(id) {
+  const u = getUsers().find(x => x.id == id);
+  if (!u) return;
+  document.getElementById('u_nome').value     = u.nome;
+  document.getElementById('u_email').value    = u.email;
+  document.getElementById('u_role').value     = u.role;
+  document.getElementById('u_status').value   = u.status;
+  document.getElementById('u_password').value = '';
+  resetStrengthBars();
+  const modal = document.getElementById('userModal');
+  modal.dataset.editId = id;
+  modal.querySelector('.modal-title').textContent = 'Editar Usuário';
+  modal.querySelector('.modal-subtitle').textContent = 'Atualize os dados do acesso';
+  openModal('userModal');
+}
+
+function handleSaveUser(e) {
+  e.preventDefault();
+  const modal  = document.getElementById('userModal');
+  const editId = modal.dataset.editId;
+  const dados = {
+    nome:   document.getElementById('u_nome').value.trim(),
+    email:  document.getElementById('u_email').value.trim(),
+    role:   document.getElementById('u_role').value,
+    status: document.getElementById('u_status').value
+  };
+
+  let users = getUsers();
+  if (editId) {
+    users = users.map(u => u.id == editId ? { ...u, ...dados } : u);
+    showToast('Usuário atualizado!', 'success');
+  } else {
+    users.push({ id: Date.now(), ...dados, acesso: 'Nunca acessou' });
+    showToast('Usuário cadastrado!', 'success');
+  }
+  saveUsers(users);
+  closeModal('userModal');
+  e.target.reset();
+  resetStrengthBars();
+  delete modal.dataset.editId;
+  renderUsersTable();
+}
+
+function removeUser(id) {
+  const u = getUsers().find(x => x.id == id);
+  if (!u) return;
+  if (confirm(`Deseja remover ${u.nome}?`)) {
+    saveUsers(getUsers().filter(x => x.id != id));
+    renderUsersTable();
+    showToast('Usuário removido.', 'info');
+  }
+}
+
+function resetStrengthBars() {
+  document.querySelectorAll('.strength-bar').forEach(bar => bar.style.background = 'var(--gray-800)');
+}
+
+function checkPasswordStrength(password) {
+  const bars = document.querySelectorAll('.strength-bar');
+  let strength = 0;
+  if (password.length >= 8) strength++;
+  if (/[a-z]/.test(password) && /[A-Z]/.test(password)) strength++;
+  if (/\d/.test(password)) strength++;
+  if (/[!@#$%^&*]/.test(password)) strength++;
+  const colors = ['#ff6b6b', '#ff6b6b', '#f0c040', '#60d48c'];
+  bars.forEach((bar, i) => {
+    bar.style.background = i < strength ? colors[strength - 1] : 'var(--gray-800)';
+  });
+}

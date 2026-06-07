@@ -183,18 +183,10 @@
   background: rgba(0,0,0,0.7);
   backdrop-filter: blur(4px);
   z-index: 200;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   padding: 24px;
-  animation: fadeIn 0.2s ease both;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity var(--transition);
-}
-.modal-overlay.open {
-  opacity: 1;
-  pointer-events: all;
 }
 
 .modal {
@@ -204,11 +196,6 @@
   width: 100%;
   max-width: 480px;
   box-shadow: var(--shadow-lg);
-  transform: translateY(20px);
-  transition: transform var(--transition-slow);
-}
-.modal-overlay.open .modal {
-  transform: translateY(0);
 }
 
 .modal-header {

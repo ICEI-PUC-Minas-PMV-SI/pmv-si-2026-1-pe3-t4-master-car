@@ -1,3 +1,5 @@
 # 6. Apresentação do Projeto
 
-Disponibilizar o arquivo da apresentação final do projeto.
+[Apresentação final.pptx](https://github.com/user-attachments/files/29185875/Apresentacao.final.pptx)
+
+
